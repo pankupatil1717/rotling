@@ -66,7 +66,7 @@ export default function Vistor() {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <Link className="nav-link" to={""} style={{ color: "#00254f", fontWeight: "500" }}>
+              <Link className="nav-link" to={"/"} style={{ color: "#00254f", fontWeight: "500" }}>
                 Product
               </Link>
 
