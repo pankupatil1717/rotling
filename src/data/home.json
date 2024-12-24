@@ -1,0 +1,65 @@
+{
+    "carousel": [
+      {
+        "image": "https://via.placeholder.com/1200x500/007BFF/ffffff?text=Slide+1",
+        "altText": "Welcome to Our Store",
+        "caption": "Welcome to Our Store"
+      },
+      {
+        "image": "https://via.placeholder.com/1200x500/28A745/ffffff?text=Slide+2",
+        "altText": "Discover New Arrivals",
+        "caption": "Discover New Arrivals"
+      },
+      {
+        "image": "https://via.placeholder.com/1200x500/DC3545/ffffff?text=Slide+3",
+        "altText": "Special Discounts",
+        "caption": "Special Discounts"
+      }
+    ],
+    "filters": {
+      "storage": ["Small", "Medium", "Large"],
+
+      "budget": {
+        "min": 0,
+        "max": 20000,
+        "step": 500
+      },
+
+      "technology": ["RO", "UV", "Copper Range"],
+
+
+      "sourceOfWater": ["Hard Water", "Soft Water"]
+    },
+    "products": [
+      {
+        "image": "https://tse4.mm.bing.net/th?id=OIP._k4ZlNcllPMJxvPwekpTcwHaHa&pid=Api&P=0&h=180",
+        "name": "Pureit Copper+ Mineral RO+UV Water Purifier",
+        "price": "₹15,000"
+      },
+      {
+        "image": "https://via.placeholder.com/300x300",
+        "name": "Pureit Ultima Mineral RO+UV Water Purifier",
+        "price": "₹18,000"
+      },
+      {
+        "image": "https://via.placeholder.com/300x300",
+        "name": "Pureit Eco RO+MF Water Purifier",
+        "price": "₹12,500"
+      }, {
+        "name": "Pureit Copper+ Mineral RO+UV Water Purifier",
+        "image": "https://via.placeholder.com/300x300",
+        "price": "₹15,000"
+      },
+      {
+        "name": "Pureit Ultima Mineral RO+UV Water Purifier",
+        "image": "https://via.placeholder.com/300x300",
+        "price": "₹18,000"
+      },
+      {
+        "name": "Pureit Ultima Mineral RO+UV Water Purifier",
+        "image": "https://via.placeholder.com/300x300",
+        "price": "₹18,000"
+      }
+    ]
+  }
+  
