@@ -34,20 +34,20 @@ export default function Solar() {
 
           {/* <!-- Product Image --> */}
           <div className="col-md-6 text-center">
-            <img src="https://veerachiinternational.com/aqua-akshara/" alt="Aqua Akshara" className="img-fluid" />
+            <img src="/assets/images/Image solar4.jpg" alt="Aqua Akshara" className="img-fluid" />
           </div>
         </div>
 
         {/* <!-- Product Images Row --> */}
         <div className="row mt-5 pb-2">
           <div className="col-md-4 text-center">
-            <img src="https://via.placeholder.com/300x300" alt="Aqua Akshara Box" className="img-fluid product-images" />
+            <img src="/assets/images/gallary/Frame-14-179x300.jpg" alt="Aqua Akshara Box" className="img-fluid product-images" />
           </div>
           <div className="col-md-4 text-center">
-            <img src="https://via.placeholder.com/300x300" alt="Aqua Akshara Features" className="img-fluid product-images" />
+            <img src="/assets/images/gallary/Frame-14-179x300.jpg" alt="Aqua Akshara Features" className="img-fluid product-images" />
           </div>
           <div className="col-md-4 text-center">
-            <img src="https://via.placeholder.com/300x300" alt="Aqua Akshara Closeup" className="img-fluid product-images" />
+            <img src="/assets/images/gallary/Frame-14-179x300.jpg" alt="Aqua Akshara Closeup" className="img-fluid product-images" />
           </div>
         </div>
       </div>

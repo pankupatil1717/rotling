@@ -1,97 +1,93 @@
-import React from 'react'
+import React from 'react';
 
-export default function Gallary() {
+export default function Gallery() {
     return (
-        <div  >
-            <div className="banner  ">
-                <img src="https://via.placeholder.com/1920x600?text=Gallery+Banner " style={{ height: "250px" }} alt="img" />
-                <div className="banner-title text-center text-black">
-                    Gallary
+        <div>
+            <div className="banner text-center">
+                <img 
+                    src="/assets/images/gallary/sub-banner.jpg" 
+                    style={{ height: "250px", width: "100%", objectFit: "cover" }} 
+                    alt="Gallery Banner" 
+                />
+                <div className="banner-title text-center text-black fs-2 fw-bold mt-2 h-25">
+                    Gallery
                 </div>
             </div>
-            <div class="container my-5">
 
+            <div className="container my-5">
+                {/* Nav Tabs */}
+                <ul className="nav nav-tabs justify-content-center" id="galleryTabs" role="tablist">
+                    {["All", "Gallery", "Videos"].map((tab) => (
+                        <li className="nav-item" role="presentation" key={tab}>
+                            <button 
+                                className={`nav-link ${tab === "All" ? "active" : ""}`} 
+                                id={`${tab.toLowerCase()}-tab`} 
+                                data-bs-toggle="tab" 
+                                data-bs-target={`#${tab.toLowerCase()}`} 
+                                type="button" 
+                                role="tab" 
+                                aria-controls={tab.toLowerCase()} 
+                                aria-selected={tab === "All"}>
+                                {tab}
+                            </button>
+                        </li>
+                    ))}
+                </ul>
 
-            </div>
-
-
-            {/* <!-- Content Section --> */}
-
-
-
-            {/* <!-- Nav Tabs --> */}
-            <ul class="nav nav-tabs justify-content-center pt-4" id="galleryTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="nature-tab" data-bs-toggle="tab" data-bs-target="#nature" type="button" role="tab" aria-controls="nature" aria-selected="false">Nature</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="architecture-tab" data-bs-toggle="tab" data-bs-target="#architecture" type="button" role="tab" aria-controls="architecture" aria-selected="false">Architecture</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="animals-tab" data-bs-toggle="tab" data-bs-target="#animals" type="button" role="tab" aria-controls="animals" aria-selected="false">Animals</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="videos-tab" data-bs-toggle="tab" data-bs-target="#videos" type="button" role="tab" aria-controls="videos" aria-selected="false">Videos</button>
-                </li>
-            </ul>
-
-            {/* <!-- Tab Content --> */}
-            <div class="tab-content mt-4" id="galleryTabsContent">
-                {/* <!-- All Tab --> */}
-                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-                    <div class="row gallery">
-                        <div class="col-md-4 gallery-item"><img src="https://via.placeholder.com/300x200?text=Nature1" alt="Nature" /></div>
-                        <div class="col-md-4 gallery-item"><img src="https://via.placeholder.com/300x200?text=Architecture1" alt="Architecture" /></div>
-                        <div class="col-md-4 gallery-item"><img src="https://via.placeholder.com/300x200?text=Animal1" alt="Animal" /></div>
-                        <div class="col-md-4 gallery-item"><img src="https://via.placeholder.com/300x200?text=Nature2" alt="Nature" /></div>
-                        <div class="col-md-4 gallery-item"><img src="https://via.placeholder.com/300x200?text=Architecture2" alt="Architecture" /></div>
-                        <div class="col-md-4 gallery-item"><img src="https://via.placeholder.com/300x200?text=Animal2" alt="Animal" /></div>
-                    </div>
-                </div>
-
-                {/* <!-- Nature Tab --> */}
-                <div class="tab-pane fade" id="nature" role="tabpanel" aria-labelledby="nature-tab">
-                    <div class="row gallery">
-                        <div class="col-md-4 gallery-item"><img src="https://via.placeholder.com/300x200?text=Nature1" alt="Nature" /></div>
-                        <div class="col-md-4 gallery-item"><img src="https://via.placeholder.com/300x200?text=Nature2" alt="Nature" /></div>
-                        <div class="col-md-4 gallery-item"><img src="https://via.placeholder.com/300x200?text=Nature3" alt="Nature" /></div>
-                    </div>
-                </div>
-
-                {/* <!-- Architecture Tab --> */}
-                <div class="tab-pane fade" id="architecture" role="tabpanel" aria-labelledby="architecture-tab">
-                    <div class="row gallery">
-                        <div class="col-md-4 gallery-item"><img src="https://via.placeholder.com/300x200?text=Architecture1" alt="Architecture" /></div>
-                        <div class="col-md-4 gallery-item"><img src="https://via.placeholder.com/300x200?text=Architecture2" alt="Architecture" /></div>
-                        <div class="col-md-4 gallery-item"><img src="https://via.placeholder.com/300x200?text=Architecture3" alt="Architecture" /></div>
-                    </div>
-                </div>
-
-                {/* <!-- Animals Tab --> */}
-                <div class="tab-pane fade" id="animals" role="tabpanel" aria-labelledby="animals-tab">
-                    <div class="row gallery">
-                        <div class="col-md-4 gallery-item"><img src="https://via.placeholder.com/300x200?text=Animal1" alt="Animal" /></div>
-                        <div class="col-md-4 gallery-item"><img src="https://via.placeholder.com/300x200?text=Animal2" alt="Animal" /></div>
-                        <div class="col-md-4 gallery-item"><img src="https://via.placeholder.com/300x200?text=Animal3" alt="Animal" /></div>
-                    </div>
-                </div>
-
-                {/* <!-- Videos Tab --> */}
-                <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
-                    <div class="row">
-                        <div class="col-md-6 video-item">
-                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video 1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                        <div class="col-md-6 video-item">
-                            <iframe src="https://www.youtube.com/embed/3tmd-ClpJxA" title="Video 2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                {/* Tab Content */}
+                <div className="tab-content mt-4 text-center" id="galleryTabsContent">
+                    
+                    {/* All Tab */}
+                    <div className="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                        <div className="row justify-content-center">
+                            {["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg", "image6.jpg"].map((img, index) => (
+                                <div className="col-md-4 col-sm-6 mb-3" key={index}>
+                                    <img 
+                                        src={`/assets/images/veeranchi25-225x300.jpg ${img}`} 
+                                        className="img-fluid rounded shadow" 
+                                        alt={`All - ${img}`} 
+                                    />
+                                </div>
+                            ))}
                         </div>
                     </div>
+
+                    {/* Gallery Tab */}
+                    <div className="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+                        <div className="row justify-content-center">
+                            {["gallery1.jpg", "gallery2.jpg", "gallery3.jpg", "gallery4.jpg"].map((img, index) => (
+                                <div className="col-md-4 col-sm-6 mb-3" key={index}>
+                                    <img 
+                                        src={`/assets/images/gallery/${img}`} 
+                                        className="img-fluid rounded shadow" 
+                                        alt={`Gallery - ${img}`} 
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Videos Tab */}
+                    <div className="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
+                        <div className="row justify-content-center">
+                            {["dQw4w9WgXcQ", "3tmd-ClpJxA"].map((videoId, index) => (
+                                <div className="col-md-6 mb-3" key={index}>
+                                    <div className="ratio ratio-16x9">
+                                        <iframe 
+                                            src={`https://www.youtube.com/embed/${videoId}`} 
+                                            title={`Video ${index + 1}`} 
+                                            frameBorder="0" 
+                                            allow="autoplay; encrypted-media" 
+                                            allowFullScreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div >
-
-    )
+        </div>
+    );
 }

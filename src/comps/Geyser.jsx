@@ -52,7 +52,7 @@ export default function Geyser() {
           {/* <!-- Product Image --> */}
           <div className="col-md-6 text-center">
             <img
-              src="https://veerachiinternational.com/aqua-akshara/"
+              src="/assets/images/Water3geysar-1.jpg"
               alt="Aqua Akshara"
               className="img-fluid"
             />
@@ -63,21 +63,21 @@ export default function Geyser() {
         <div className="row mt-5 pb-2">
           <div className="col-md-4 text-center">
             <img
-              src="https://via.placeholder.com/300x300"
+              src="/assets/images/gallary/Frame-14-179x300.jpg"
               alt="Aqua Akshara Box"
               className="img-fluid product-images"
             />
           </div>
           <div className="col-md-4 text-center">
             <img
-              src="https://via.placeholder.com/300x300"
+              src="/assets/images/gallary/Frame-14-179x300.jpg"
               alt="Aqua Akshara Features"
               className="img-fluid product-images"
             />
           </div>
           <div className="col-md-4 text-center">
             <img
-              src="https://via.placeholder.com/300x300"
+              src="/assets/images/gallary/Frame-14-179x300.jpg"
               alt="Aqua Akshara Closeup"
               className="img-fluid product-images"
             />

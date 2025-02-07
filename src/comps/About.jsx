@@ -38,21 +38,21 @@ export default function About() {
                     <div className="row">
                         <div className="col-md-4 mb-4">
                             <div className="team-member">
-                                <img src="https://via.placeholder.com/150" alt="Team Member 1" />
+                                <img src="/assets/images/boy 1.jpg" alt="Team Member 1" />
                                 <h5>John Doe</h5>
                                 <p>CEO & Founder</p>
                             </div>
                         </div>
                         <div className="col-md-4 mb-4">
                             <div className="team-member">
-                                <img src="https://via.placeholder.com/150" alt="Team Member 2" />
+                                <img src="/assets/images/boy 1.jpg" alt="Team Member 2" />
                                 <h5>Jane Smith</h5>
                                 <p>Chief Technology Officer</p>
                             </div>
                         </div>
                         <div className="col-md-4 mb-4">
                             <div className="team-member">
-                                <img src="https://via.placeholder.com/150" alt="Team Member 3" />
+                                <img src="/assets/images/boy 1.jpg" alt="Team Member 3" />
                                 <h5>Sarah Johnson</h5>
                                 <p>Head of Marketing</p>
                             </div>

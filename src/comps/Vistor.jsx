@@ -37,7 +37,7 @@ export default function Vistor() {
           <i className="bi bi-geo-alt" ></i> Enter your location pin-code
         </div>
         <div className="d-flex flex-wrap align-items-center">
-          <span className="me-3"><i className="bi bi-envelope" style={{ color: "#FF0000" }}></i> xxxx.com</span>
+          <span className="me-3"><i className="bi bi-envelope" style={{ color: "#FF0000" }}></i> xxxxgmail.com</span>
           <span className="me-3"><i className="bi bi-whatsapp" style={{ color: '#25D366' }}></i> +919739101344</span>
           <span><i className="bi bi-telephone"></i> Customer Support: 1800-570-1000</span>
         </div>
@@ -49,8 +49,8 @@ export default function Vistor() {
 
       {/* <!-- Main Navbar --> */}
       <nav className="navbar navbar-expand-lg navbar-light bg-light px-3">
-        <Link className="navbar-brand" to={"/"}>
-          <img src="https://via.placeholder.com/80x30" alt="Pureit Logo" />
+        <Link className="navbar-brand " to={"/"}>
+          <img   src="/assets/images/logo-removebg-preview-.png" alt="Pureit Logo" style={{ height: "60px", width: "100px" }}   />
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
